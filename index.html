@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    
+  <link rel="stylesheet" href="./assets/index-8ca8fd0a.css">
+</head>
+<body>
+    <div class="flex justify-center items-center h-[100vh] w-[100vw] bg-purple-600 ">
+        <div class="container flex-row bg-purple-900 mx-auto w-[15vw] px-3 py-2 space-y-3 rounded-lg text-white">
+            <div class="pw flex justify-around bg-purple-600 items-center space-x-2 text-lg">
+                <span id="pw" class="overflow-auto" > fadskj931kk
+                </span>
+                <button id = "copy" class="bg-yellow-600 rounded-md text-purple-900 text-center hover:bg-yellow-500 text-base px-1">copy</button>
+            </div>
+            <div class="modifier flex justify-center items-center space-x-2">
+                <label for="len">Password Length</label>
+                <input type="number" class="text-black px-1" min="3" max= "30" id="len">
+            </div>
+            <div class="modifier flex justify-center items-center space-x-2">
+                <label for="upper flex justify-center items-center">Include Uppercase Letters</label>
+                <input type="checkbox" id="upper">
+            </div>
+            <div class="modifier flex justify-center items-center space-x-2">
+                <label for="lower">Include Lowercase Letters</label>
+                <input type="checkbox" id="lower">
+            </div>
+            <div class="modifier flex justify-center items-center space-x-2">
+                <label for="number">Include Numbers</label>
+                <input type="checkbox" id="number">
+            </div>
+            <div class="modifier flex justify-center items-center space-x-2">
+                <label for="symbol">Include Symbols</label>
+                <input type="checkbox" id="symbol">
+            </div>
+            <div id="generate" class="bg-yellow-600 rounded-md text-purple-900 font-medium text-center hover:bg-yellow-500 text-base p-1">
+                <input type="submit" value="Generate">
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
