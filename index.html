@@ -8,37 +8,37 @@
   <link rel="stylesheet" href="./assets/index-8ca8fd0a.css">
 </head>
 <body>
-    <header class="text-5xl py-2 font-medium text-teal-500 text-center">
+    <header class="text-5xl lg:text-7xl py-2 font-medium text-teal-500 text-center">
         Password Generator
     </header>
-    <div class="flex justify-center items-center h-[75vh] w-[100vw]  ">
-        <div class="container flex-col bg-teal-500 mx-auto w-[15vw] h-[40vh] px-3 py-2 space-y-4 rounded-lg text-white">
-            <div class="pw flex justify-around bg-teal-400 rounded-md items-center space-x-2 text-lg">
+    <div class="flex justify-center items-center h-[50vh] md:h-[60vh] lg:h-[75vh] w-[100vw]  ">
+        <div class="container flex-col bg-teal-500 mx-auto w-52 md:w-64 lg:w-72 md:text-xl lg:text-2xl px-3 py-2 space-y-3 rounded-lg text-white">
+            <div class="pw flex justify-center bg-teal-400 rounded-md items-center space-x-2 ">
                 <span id="pw" class="overflow-auto" > fadskj931kk
                 </span>
                 <button id = "copy" class="bg-white hover:border-2  hover:border-white  rounded-md text-center hover:bg-teal-500 text-base px-1"><i class="fa fa-copy text-teal-300  hover:text-white"></i></button>
             </div>
             <div class="modifier flex justify-center items-center space-x-2">
-                <label for="len">Password Length</label>
+                <label for="len">Length</label>
                 <input type="number" class="text-black rounded-sm px-1" min="3" max= "30" id="len">
             </div>
             <div class="modifier flex justify-center items-center space-x-2">
-                <label for="upper flex justify-center items-center">Include Uppercase Letters</label>
+                <label for="upper">Uppercase Letters</label>
                 <input type="checkbox" id="upper">
             </div> 
             <div class="modifier flex justify-center items-center space-x-2">
-                <label for="lower">Include Lowercase Letters</label>
+                <label for="lower font-medium">Lowercase Letters</label>
                 <input type="checkbox" id="lower">
             </div>
             <div class="modifier flex justify-center items-center space-x-2">
-                <label for="number">Include Numbers</label>
+                <label for="number">Numbers</label>
                 <input type="checkbox" id="number">
             </div>
             <div class="modifier flex justify-center items-center space-x-2">
-                <label for="symbol">Include Symbols</label>
+                <label for="symbol">Symbols</label>
                 <input type="checkbox" id="symbol">
             </div>
-            <div id="generate" class="bg-white  hover:bg-teal-500 rounded-md text-teal-500 hover:text-white font-medium text-center text-base p-1 border-2 hover:border-white">
+            <div id="generate" class="bg-white  hover:bg-teal-500 rounded-md text-teal-500 hover:text-white font-medium text-center p-1 border-2 hover:border-white">
                 <input type="submit" value="Generate">
             </div>
         </div>
